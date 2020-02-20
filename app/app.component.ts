@@ -38,7 +38,7 @@ export class AppComponent {
       ajax: (dataTablesParameters: any, callback) => {
         that.http
           .post<DataTablesResponse>(
-            'https://localhost:8765/api/v1/organisation/95166124-db90-4c88-ab6e-f5cb40b336a9/custom-table/datatable',
+            '',
             dataTablesParameters, {}
           ).subscribe(resp => {
             that.persons = resp.data;
